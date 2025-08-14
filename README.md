@@ -65,14 +65,15 @@ npm run dev
 
 ### Configuration & customization
 
-- **Models**: Update the `CLAUDE_MODELS` array in `src/app/page.tsx` to add/remove models or change the default.
+- **Models**: Update the models list in `src/claude-models.json` to add/remove models or change the available options.
 
-```ts
-// src/app/page.tsx
-const CLAUDE_MODELS = [
-  { id: "claude-sonnet-4-20250514", name: "Claude Sonnet 4" },
+```json
+// src/claude-models.json
+[
+  { "id": "claude-sonnet-4-20250514", "name": "Claude Sonnet 4" },
+  { "id": "claude-3-7-sonnet-20250219", "name": "Claude 3.7 Sonnet" },
   // Add your preferred models here
-];
+]
 ```
 
 - **Default system message**: Change the initial value of `systemMessage` in `src/app/page.tsx`.
